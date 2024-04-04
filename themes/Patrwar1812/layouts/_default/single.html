@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="section-col">
+<section class="section">
+  <div class="container max-800px">
+    <h1 class="title is-3">{{ .Title }}</h1>
+    {{ with .Params.images }}
+    <figure class="title-image">
+    <img src="{{ index . 0 }}" alt="">
+    </figure>
+    {{ end }}
+    <div class="content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+{{- partial "pagination_next_prev.html" . -}}
+</div>
+{{ end }}

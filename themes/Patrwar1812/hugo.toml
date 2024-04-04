@@ -1,0 +1,45 @@
+baseURL = ''
+
+[[menus.main2]]
+  name = "About"
+  url = "/about"
+
+[[menus.main2]]
+  name = "Blog"
+  url = "/blog"
+
+[[menus.social]]
+  name = "VK"
+  url = "https://www.vk.com/channel/patrwar-1812"
+  pre = "<i class='fab fa-vk'></i>"
+
+[[menus.social]]
+  name = "Email"
+  url = "https://www.patrwar1812.ru/about"
+  pre = "<i class='fa fa-envelope' aria-hidden='true'></i>"
+
+
+[[menus.footer]]
+name = 'Главная'
+pageRef = '/'
+weight = 10
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"
+
+[params]
+  mydomain = "https://www.patrwar1812.ru/"
+    
+    [params.image]
+    url = "/img/cover.png"
+    
+    [params.sitelogo]
+    url = "/img/favicon.ico"
+
+  
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":fileModTime", ":default"]
+

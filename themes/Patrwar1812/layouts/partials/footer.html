@@ -1,0 +1,4 @@
+<div class="has-text-centered">
+    <p> &copy 2023-{{ now.Year }}. <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p> 
+    {{ partial "menu_footer.html" (dict "menuID" "footer" "page" .) }} 
+</div>

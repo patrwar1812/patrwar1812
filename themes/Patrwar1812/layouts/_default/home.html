@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+<section id=section-main class="section">
+      <div class="content">
+          {{ .Content }}
+          {{ range where .Site.RegularPages.ByWeight "Params.borodino"  "before" }}
+            <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+          <p>
+            {{ .Summary }}
+          </p>
+          {{ end }}
+
+         {{ range where .Site.Sections "Section" "posts" }}
+         <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>      
+         <p>
+          {{ .Summary }}
+        </p>
+         {{ end }}
+
+         {{ range where .Site.RegularPages.ByWeight "Params.borodino" "after" }}
+            <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+            <p>
+              {{ .Summary }}
+            </p>
+         {{ end }}
+      </div>
+      
+  </section>
+  
+           
+  <section id=section class="section">
+      
+   {{- partial "aside.html" . -}} 
+  </section>
+
+{{ end }}

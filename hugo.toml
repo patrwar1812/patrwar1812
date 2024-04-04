@@ -1,0 +1,15 @@
+baseURL = 'https://www.patrwar1812.ru/'
+languageCode = 'ru-RU'
+title = 'Война 1812 года'
+
+theme = "Patrwar1812"
+disableHugoGeneratorInject = true
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
+[params]
+    description = "История Отечественной войны 1812 года или Наполеоновского нашествия на Россию. Подробное описание битвы при Бородино, сражения у Малоярославца и других ключевых военных событий 1812 года с картами и иллюстрациями."
+    subtitle = "123"
+    heroimage = "/img/cover.jpg"

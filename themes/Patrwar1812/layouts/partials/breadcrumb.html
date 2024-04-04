@@ -1,0 +1,18 @@
+<nav class="breadcrumb is-centered" aria-label="breadcrumb ">
+    <div class="container-fluid px-3 pt-5">
+      <ol class="breadcrumb pt-3 varelatxt">
+        {{- define "partials/inline/breadcrumb" -}}
+          {{- with .Parent }}
+            {{ partial "inline/breadcrumb" . }}
+            <li class="breadcrumb-item">
+              <a href="{{ .RelPermalink }}">{{ .Title | humanize | title }}</a>
+            </li>
+          {{- end }}
+        {{- end -}}
+        {{ partial "inline/breadcrumb" . }}
+        <li class="breadcrumb-item active" aria-current="page">
+            <span>{{ .Title | humanize | title }}</span>
+        </li>
+      </ol>
+    </div>
+  </nav>

@@ -1,0 +1,38 @@
+<nav class="navbar" role="navigation">
+    <div class="hero-body" 
+      {{ with .Site.Params.heroimage -}} 
+      style="background: url({{ . }}) center top; background-size:cover;"
+      {{ end }}>
+      <p class="title">
+        <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+      </p>
+      <div class="container">
+        <div class="navbar-brand">
+            
+            {{ range site.Menus.social }}
+            <a href="{{ .URL }}" class="navbar-item is-hidden-desktop" title="{{ .Name }}"><span
+                    class="icon">{{ .Pre }}</span></a>
+            {{ end }}
+            
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-end">
+                {{ range site.Menus.social }}
+                <a href="{{ .URL }}" class="navbar-item is-hidden-touch" title="{{ .Name }}"><span
+                        class="icon">{{ .Pre }}</span></a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+    </div>
+ 
+  </nav>
+  <script>
+    $(document).ready(function () {
+        $(".navbar-burger").click(function () {
+            $(".navbar-burger").toggleClass("is-active");
+            $(".navbar-menu").toggleClass("is-active");
+        })
+    })
+  </script>

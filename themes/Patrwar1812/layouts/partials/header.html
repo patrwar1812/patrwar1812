@@ -1,0 +1,11 @@
+{{ $permalink := .Permalink }}
+<div class="hero is-medium">
+    <div class="hero-body" >
+      {{ with .Site.Params.heroimage -}} 
+      <a href="{{ $permalink }}"><img src="{{ . }}" alt=""></a>
+      {{ end }}
+      
+    </div>
+    
+</div>
+
