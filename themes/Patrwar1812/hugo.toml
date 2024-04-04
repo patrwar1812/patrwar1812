@@ -1,4 +1,4 @@
-baseURL = ''
+baseURL = ""
 
 [[menus.main2]]
   name = "About"
