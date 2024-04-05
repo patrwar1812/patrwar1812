@@ -39,7 +39,7 @@ weight = 10
     url = "/img/favicon.ico"
 
 [params.staticman]
-    endpoint = "https://patrwar1812.cyclic.app/v1/webhook"
+    endpoint = "https://patrwar1812.cyclic.app/v2/entry"
     username = "patrwar1812"
     repository = "patrwar1812"
     branch = "master"
