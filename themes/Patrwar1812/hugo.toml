@@ -38,6 +38,11 @@ weight = 10
     [params.sitelogo]
     url = "/img/favicon.ico"
 
+[params.staticman]
+    endpoint = "https://patrwar1812.cyclic.app/v1/webhook"
+    username = "patrwar1812"
+    repository = "patrwar1812"
+    branch = "master"
   
 [frontmatter]
   date = ["date", "publishDate", "lastmod"]

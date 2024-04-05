@@ -4,6 +4,7 @@ title = 'Война 1812 года'
 
 theme = "Patrwar1812"
 disableHugoGeneratorInject = true
+disableKinds = ["taxonomy", "term", "RSS"]
 
 [markup]
     [markup.goldmark]
