@@ -70,5 +70,17 @@
 	</div>
 
 	{{ end }}
+
+	<!-- ... -->
+	<div id="waline"></div>
+	<script type="module">
+	  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  
+	  init({
+		el: '#waline',
+		serverURL: 'https://waline-1-t5636863.deta.app/',
+		lang: 'en',
+	  });
+	</script>
 </section>
 {{ end }}
