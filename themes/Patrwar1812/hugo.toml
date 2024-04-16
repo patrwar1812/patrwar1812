@@ -43,6 +43,12 @@ weight = 10
     username = "patrwar1812"
     repository = "patrwar1812"
     branch = "master"
+
+[params.staticman2]
+    endpoint = "https://patrwar1812.cyclic.app/v3/entry/github"
+    username = "patrwar1812"
+    repository = "patrwar1812"
+    branch = "master"
   
 [frontmatter]
   date = ["date", "publishDate", "lastmod"]
