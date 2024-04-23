@@ -265,4 +265,8 @@ aside .active {
     color: #5b616b;
     letter-spacing: unset;
   }
+  .section-single {
+    display: flex;
+    flex-direction: column;
+  }
    

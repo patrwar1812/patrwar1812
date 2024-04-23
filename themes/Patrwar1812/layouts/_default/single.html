@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="section-col">
-<section class="section">
+<section class="section-single">
   <div class="container max-800px">
     <h1 class="title is-3">{{ .Title }}</h1>
     {{ with .Params.images }}
@@ -15,4 +15,6 @@
 </section>
 {{- partial "pagination_next_prev.html" . -}}
 </div>
+{{ partial "comments.html" .}}
 {{ end }}
+
