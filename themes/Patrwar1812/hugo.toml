@@ -31,7 +31,8 @@ weight = 10
 
 [params]
   mydomain = "https://www.patrwar1812.ru/"
-    
+  CommentsCusdisID = "1c235319-4128-43dd-a6e0-b5d925d2e5da"
+
     [params.image]
     url = "/img/cover.png"
     
